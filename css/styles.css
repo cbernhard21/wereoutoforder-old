@@ -1,0 +1,113 @@
+/* colors
+dark red = #510300
+gold = #ebbf47
+grey = #c0d8d2
+dark = #2c313a
+black = #050c0f */
+
+:root {
+  --main-font-color: #c0d8d2;
+  --dark-accent-color: #510300;
+  --accent-color: #ebbf47;
+  --dark-color: #2c313a;
+  --black: #050c0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: var(--main-font-color);
+}
+
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+nav a {
+  font-size: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+section h2 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+
+/* UTILITIES */
+
+.container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+/* HERO SECTION  */
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(10, 0, 0, 0.8), rgba(10, 0, 0, 0.3)), url('../images/podcast-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero-nav {
+  width: 25%;
+}
+
+.hero-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-description {
+  width: 50%;
+}

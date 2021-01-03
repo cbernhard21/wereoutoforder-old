@@ -6,7 +6,7 @@ dark = #2c313a
 black = #050c0f */
 
 :root {
-  --main-font-color: #c0d8d2;
+  --main-font-color: #d6d6d6;
   --dark-accent-color: #510300;
   --accent-color: #ebbf47;
   --dark-color: #2c313a;
@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 0;
   padding: 0;
+  line-height: 1;
 }
 
 ul {
@@ -58,8 +59,10 @@ nav a {
   font-size: 6rem;
 }
 
-.subtitle {
-  font-size: 2rem;
+.hero .subtitle {
+  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 section h2 {
@@ -97,6 +100,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 5rem;
+  padding-top: 1.5rem;
 }
 
 .hero-nav {

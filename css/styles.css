@@ -121,7 +121,8 @@ p {
 
 .coming-soon {
   font-family: 'Hanalei Fill', cursive;
-  font-size: 10rem;
+  font-size: clamp(3rem, 0.0000rem + 13.3333vw, 7rem);
+  /* font-size: 10rem; */
   letter-spacing: 20px;
   text-align: center;
   transform: rotate(-10deg);

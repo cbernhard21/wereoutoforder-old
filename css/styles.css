@@ -203,7 +203,7 @@ p {
 /* CONTACT SECTION  */
 
 .contact-container {
-  padding-top: 10vh;
+  padding: 20vh 0 20vh;
   background-color: var(--black);
 }
 

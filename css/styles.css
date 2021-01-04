@@ -24,6 +24,7 @@ html {
   background-color: var(--dark-color);
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -104,8 +105,18 @@ p {
 }
 
 .section-title {
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   font-size: 5rem;
+}
+
+.fab {
+  color: var(--main-font-color);
+  font-size: 2.5rem;
+  transition: 0.2s all ease;
+}
+
+.fab:hover {
+  color: var(--accent-color);
 }
 
 
@@ -169,11 +180,6 @@ p {
   justify-content: space-between;
 }
 
-.fab {
-  color: var(--main-font-color);
-  font-size: 2.5rem;
-}
-
 
 /* BURGER MENU */
 
@@ -203,7 +209,7 @@ p {
 /* CONTACT SECTION  */
 
 .contact-container {
-  padding: 20vh 0 20vh;
+  padding: 10vh 0 10vh;
   background-color: var(--black);
 }
 
@@ -220,6 +226,7 @@ form {
   background-color: var(--grey);
   color: var(--dark-color);
   padding: 5vh;
+  margin: 2vh;
   border-radius: 10px;
 }
 
@@ -255,11 +262,74 @@ button[type=submit] {
   transition: .3s ease background-color;
 }
 
+#status {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.success {
+  font-size: 1.5rem;
+  background-color: var(--dark-color);
+  color: var(--main-font-color);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  font-size: 1.5rem;
+  background-color: var(--dark-accent-color);
+  color: var(--main-font-color);
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 
 /* FOOTER SECTION  */
 
 footer {
-  padding: 8vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh 0;
+}
+
+footer>p {
+  font-size: 1rem;
+}
+
+footer .social-links {
+  width: 25%;
+}
+
+footer>* {
+  margin-bottom: 1vh;
+}
+
+footer .fab {
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: var(--main-font-color);
+  text-decoration: underline;
 }
 
 
@@ -275,9 +345,12 @@ footer {
   .hero-nav {
     width: 30%;
   }
+  footer .social-links {
+    width: 40%;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 765px) {
   .hero h1 {
     font-size: 3.5rem;
   }
@@ -328,6 +401,9 @@ footer {
   .nav-active {
     transform: translateX(0%)
   }
+  footer .social-links {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -348,5 +424,18 @@ footer {
   .btn {
     width: 100%;
     text-align: center;
+  }
+  #contact .section-title, #episodes .section-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  form {
+    padding: 2vh;
+  }
+  button[type=submit] {
+    padding: 2vh;
+  }
+  footer .social-links {
+    width: 75%;
   }
 }

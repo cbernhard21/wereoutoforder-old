@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/af77942d5c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="top">
   <div class="hero">
     <header class="hero-header container">
       <div class="hero-logo">
@@ -20,8 +20,8 @@
       </div>
       <nav class="hero-nav" id="main-nav">
         <ul class="hero-nav-list ">
-          <li class="hero-nav-items"><a href="#episodes">Episodes</a></li>
-          <li class="hero-nav-items"><a href="#contact">Contact</a></li>
+          <li class="hero-nav-items" id="nav-1"><a href="#episodes">Episodes</a></li>
+          <li class="hero-nav-items" id="nav-2"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="burger" id="burger">
@@ -52,6 +52,7 @@
     </section>
   </div>
 
+
   <section class="container" id="episodes">
     <h2 class="section-title">Episodes</h2>
     <div class="episodes-container">
@@ -60,10 +61,10 @@
     </div>
   </section>
 
-  <div class="contact-container">
-    <section class="contact container" id="contact">
+  <div class="contact-container" id="contact">
+    <section class="contact container">
       <h2 class="section-title">Contact Us</h2>
-      <form action="#">
+      <form action="https://formspree.io/f/xwkwakop" method="POST" id="form">
         <div class="form-group">
           <label for="firstName">First Name</label>
           <input type="text" name="firstName" id="firstName">
@@ -82,11 +83,22 @@
         </div>
         <button type="submit" class="btn btn-submit">Submit</button>
       </form>
+      <div id="status"></div>
     </section>
   </div>
 
-  <footer class="container">This is the footer</footer>
-  <script src=" js/app.js"></script>
+  <footer class="container">
+    <p><a href="#top">We're Out Of Order</a></p>
+    <ul class="social-links">
+      <li><a href="https://www.facebook.com/WereOutOfOrder" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/WereOutOfOrder" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/wereoutoforder/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+    <p>Powered By Fire Arrow Productions</p>
+    <p>Copyright 2021</p>
+  </footer>
+  <script type="module" src="js/app.js"></script>
 </body>
 
 </html>

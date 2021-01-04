@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/af77942d5c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,60 +18,75 @@
         <h1>We're Out Of Order</h1>
         <h2 class="subtitle">The Podcast</h2>
       </div>
-      <nav class="hero-nav">
+      <nav class="hero-nav" id="main-nav">
         <ul class="hero-nav-list ">
-          <li class="hero-nav-items"><a href="#">Episodes</a></li>
-          <li class="hero-nav-items"><a href="#">Contact</a></li>
+          <li class="hero-nav-items"><a href="#episodes">Episodes</a></li>
+          <li class="hero-nav-items"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="burger" id="burger">
+        <div class="bar line-1"></div>
+        <div class="bar line-2"></div>
+        <div class="bar line-3"></div>
+      </div>
+
     </header>
     <section class="container">
       <div class="hero-description">
-        <h2>The Podcast</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita possimus quisquam sunt animi facilis dignissimos laboriosam, repellendus ducimus minima modi praesentium consequatur odit nam? Eveniet debitis voluptates maxime et! Maiores!Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Expedita possimus quisquam sunt animi facilis dignissimos laboriosam, repellendus ducimus minima modi praesentium consequatur odit nam? Eveniet debitis voluptates maxime et! Maiores!</p>
-        <button class="btn">Episodes</button>
-        <button class="btn">Contact</button>
+        <h2>Join Us</h2>
+        <p>You know those two guys sitting at the bar talking sports, movies, music, tv shows and everything else under the sun and they really don't have a clue what they are talking about but you wish you were a part of the conversion? Well that's us!
+          So grab a barstool, slide into the booth, put your headphones on and turn us up. </p>
+        <div class="hero-btn-group">
+          <a href="#episodes" class="btn">Episodes</a>
+
+
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/WereOutOfOrder" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/WereOutOfOrder" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/wereoutoforder/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
       </div>
-      <!-- <figure>
-        <img src="images/logo.png " alt="Podcast Logo" class="logo">
-      </figure> -->
     </section>
   </div>
 
   <section class="container" id="episodes">
-    <h2>Episodes</h2>
-    <div class="episodes-container ">
-      <div id="buzzsprout-player-7083754 " class="episode-player "></div>
+    <h2 class="section-title">Episodes</h2>
+    <div class="episodes-container">
+      <div id="buzzsprout-player-7083754" class="episode-player"></div>
       <script src="https://www.buzzsprout.com/1582000/7083754-test-run.js?container_id=buzzsprout-player-7083754&player=small " type="text/javascript " charset="utf-8 "></script>
     </div>
   </section>
 
-  <section class="container" id="contact">
-    <h2>Contact Us</h2>
-    <form action="# ">
-      <div class="form-group ">
-        <label for="firstName ">First Name</label>
-        <input type="text " name="firstName " id="firstName ">
-      </div>
-      <div class="form-group ">
-        <label for="lastName ">Last Name</label>
-        <input type="text " name="lastName " id="lastName ">
-      </div>
-      <div class="form-group ">
-        <label for="email ">Email</label>
-        <input type="email " name="email " id="email ">
-      </div>
-      <div class="form-group ">
-        <label for="comments ">Comments</label>
-        <textarea name="comments " id="comments " cols="30 " rows="10 "></textarea>
-      </div>
-      <button type="submit" class="btn btn-submit">Submit</button>
-    </form>
-  </section>
+  <div class="contact-container">
+    <section class="contact container" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <form action="#">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group ">
+          <label for="comments ">Comments</label>
+          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </form>
+    </section>
+  </div>
 
-  <footer class="container ">This is the footer</footer>
-  <script src=" js/app.js "></script>
+  <footer class="container">This is the footer</footer>
+  <script src=" js/app.js"></script>
 </body>
 
 </html>

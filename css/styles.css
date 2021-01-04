@@ -152,6 +152,8 @@ p {
 }
 
 .hero-btn-group {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   min-width: 15vw;
 }

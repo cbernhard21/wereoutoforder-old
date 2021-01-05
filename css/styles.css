@@ -168,7 +168,6 @@ p {
 
 .hero-description {
   width: 50%;
-  min-width: 500px;
 }
 
 .hero-description h2, .hero-description p {
@@ -362,6 +361,9 @@ footer a {
   }
   footer .social-links {
     width: 40%;
+  }
+  .hero-description {
+    width: 75%;
   }
 }
 

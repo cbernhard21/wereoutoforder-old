@@ -1,10 +1,9 @@
 export const sendData = () => {
   window.addEventListener("DOMContentLoaded", function() {
 
-    // get the form elements defined in your form HTML above
+    // get the form elements
 
     const form = document.querySelector("#form");
-    // const button = document.getElementById("my-form-button");
     const status = document.querySelector("#status");
 
     // Success and Error functions for after the form is submitted

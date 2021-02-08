@@ -119,14 +119,8 @@ p {
   color: var(--accent-color);
 }
 
-.coming-soon {
-  font-family: 'Hanalei Fill', cursive;
-  font-size: clamp(3rem, 0.0000rem + 13.3333vw, 7rem);
-  /* font-size: 10rem; */
-  letter-spacing: 20px;
-  text-align: center;
-  transform: rotate(-10deg);
-  text-shadow: 12px 12px 10px rgba(0, 0, 0, 0.5);
+img {
+  width: 100%;
 }
 
 
@@ -217,8 +211,46 @@ p {
   padding: 20vh 0 40vh;
 }
 
+#episodes .section-title {
+  border-bottom: 5px solid var(--dark-accent-color);
+  width: fit-content;
+}
+
+.episode-card {
+  border: 2px solid var(--accent-color);
+  border-radius: .75rem;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.episode-card-title {
+  font-size: 3rem;
+  margin-bottom: .75rem;
+}
+
+.episode-card-subtitle {
+  font-size: 2rem;
+}
+
 .player {
-  margin-bottom: 100px;
+  margin: 1.5rem 0 .75rem;
+}
+
+.episode-card-details li {
+  margin: .7rem 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10px, 1fr));
+}
+
+summary {
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5rem;
 }
 
 
@@ -371,7 +403,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
   .hero h1 {
     font-size: 3.5rem;
   }
@@ -422,6 +454,9 @@ footer a {
   .nav-active {
     transform: translateX(0%)
   }
+  .details {
+    grid-template-columns: 1fr;
+  }
   footer .social-links {
     width: 50%;
   }
@@ -449,6 +484,12 @@ footer a {
   #contact .section-title, #episodes .section-title {
     font-size: 3rem;
     text-align: center;
+  }
+  .episode-card-title {
+    font-size: 2rem;
+  }
+  .episode-card-subtitle {
+    font-size: 1.7rem;
   }
   form {
     padding: 2vh;
